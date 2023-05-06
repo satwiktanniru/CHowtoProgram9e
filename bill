@@ -1,0 +1,13 @@
+Input: cubic_feet
+Output: bill
+
+if cubic_feet <= 1000:
+    bill = 15.00
+else if 1000 < cubic_feet <= 2000:
+    bill = 15.00 + 0.0175 * (cubic_feet - 1000)
+else if 2000 < cubic_feet <= 3000:
+    bill = 32.50 + 0.02 * (cubic_feet - 2000)
+else:
+    bill = 72.50 + 0.02 * (cubic_feet - 3000)
+
+print("The water bill is $", bill)
